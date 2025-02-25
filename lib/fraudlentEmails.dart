@@ -13,19 +13,7 @@ class _FraudEmailCheckerState extends State<FraudEmailChecker> {
   String _result = "";
 
 
-// Future<void> checkEmailReputation(String email) async {
-//   final url = "https://emailrep.io/$email";
-//   final response = await http.get(Uri.parse(url));
 
-//   if (response.statusCode == 200) {
-//     var data = jsonDecode(response.body);
-//     print("Email Reputation: ${data['reputation']}");
-//     print("Blacklisted: ${data['details']['blacklisted']}");
-//     print("Malicious Activity: ${data['details']['malicious_activity']}");
-//   } else {
-//     print("Error: Unable to fetch email reputation.");
-//   }
-// }
 
   // Spam words & phrases common in fraud emails
   final List<String> spamWords = [
